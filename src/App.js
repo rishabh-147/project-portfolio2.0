@@ -7,10 +7,15 @@ import Home from "./Components/Home";
 import Resume from "./Components/Resume";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  crossorigin="anonymous"
+></link>;
 function App() {
   return (
-    <BrowserRouter basename="portfolio">
+    <BrowserRouter >
       <div className="main-container">
         {/* Header is global and visible on all routes */}
         <Header />
