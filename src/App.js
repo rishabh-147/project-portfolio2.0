@@ -12,9 +12,7 @@ import Project from "./Components/Project";
 
 function App() {
   return (
-    <Router basename="/project-portfolio2.0">
-      {" "}
-      {/* Keep this for the relative URL */}
+    <Router>
       <div className="main-container">
         {/* Header is global and visible on all routes */}
         <Header />
@@ -24,7 +22,6 @@ function App() {
           <Routes>
             {/* Define actual routes */}
             <Route path="/" element={<Home />} />
-            {/* Add other routes as needed */}
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/project" element={<Project />} />
