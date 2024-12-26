@@ -1,0 +1,79 @@
+/* Footer - Position at the bottom of the page */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212121;  /* Dark background */
+    color: white;
+    padding: 1.5%; /* Padding around the footer content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;  /* Ensure the footer stays on top of other content */
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+  }
+  
+  /* Container for footer content */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure full-width container */
+  }
+  
+  /* Left section: Copyright */
+  .footer-left {
+    text-align: left;
+  }
+  
+  /* Right section: Social Media Icons */
+  .footer-right {
+    text-align: right;
+    white-space: nowrap; /* Prevents icons from wrapping to new lines */
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Add spacing between icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
+  
+  .footer a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icons on hover */
+  }
+  
+  footer .fa {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  footer .fa:hover {
+    color: #007bff;  /* Change the icon color on hover */
+    transform: scale(1.2);  /* Make icons grow slightly */
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Ensure proper centering on small screens */
+    }
+  
+    .footer-left,
+    .footer-right {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .footer-right {
+      margin-top: 10px;
+    }
+  
+    .footer-right a {
+      margin: 0 10px; /* Add a bit of space between icons on mobile */
+    }
+  }
+  
