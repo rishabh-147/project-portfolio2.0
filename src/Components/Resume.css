@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    overflow: hidden;
+  }
+  
+  .resume-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/resume-bg.jpg'); /* Replace with your own background */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+  }
+  
+  .resume-card {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7); /* Translucent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .resume-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .resume-card p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .download-link{
+    padding: 10px;
+  }
+  .download-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-link a:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .resume-card {
+      width: 90%;
+    }
+  }
+  
+  /* Add fade-in animation */
+.resume-card {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .download-link+.temp-Down a:hover {
+    background-color: #df0f0f;
+    transform: scale(1.05);
+  }

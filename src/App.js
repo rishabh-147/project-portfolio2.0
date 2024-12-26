@@ -8,6 +8,7 @@ import Resume from "./Components/Resume";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Project from "./Components/Project";
 
 <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -27,7 +28,7 @@ function App() {
         {/* Header is global and visible on all routes */}
         <Header />
 
-        <div className="bodyWrapper">
+        <div className="bodyWrapper custom-css">
           {/* Define routes here */}
           <Routes>
             {/* Define actual routes */}
@@ -35,13 +36,14 @@ function App() {
             {/* Add other routes as needed */}
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/project" element={<Project />} />
 
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
 
         {/* Footer is global and visible on all routes */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );

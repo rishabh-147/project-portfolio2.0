@@ -1,0 +1,88 @@
+/* ComingSoon.css */
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/under-maintainence.jpg') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+  }
+  
+  .coming-soon-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Slightly transparent background to enhance the glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px); /* Apply blur for the glass effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: adds a subtle border to enhance the glassy effect */
+  }
+  
+  .coming-soon-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .coming-soon-message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .coming-soon-animation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: blinkDots 1.5s infinite step-start;
+  }
+  
+  .coming-soon-animation .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    animation: dotAnimation 1s infinite ease-in-out;
+  }
+  
+  .coming-soon-animation .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .coming-soon-animation .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .coming-soon-animation .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes dotAnimation {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  
+  @keyframes blinkDots {
+    0% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0.5;
+    }
+    66% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

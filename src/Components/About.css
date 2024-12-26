@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow: hidden; /* Disable scrolling */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Fade-in effect when page loads */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Header Styles */
+  .header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+    position: relative;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header .highlight {
+    color: #ffc107;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  
+  /* Typing Effect */
+  .typing-effect {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .typing-effect .tech-highlight {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #28a745;
+    display: inline-block;
+    font-size: 1.5rem; /* Uniform font size */
+    letter-spacing: 0.5px; /* Smooth letter spacing */
+    text-transform: capitalize;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Fade-out and Fade-in */
+  .fade-out {
+    opacity: 0; /* Fade out the text */
+  }
+  
+  .fade-in {
+    opacity: 1; /* Fade in the text */
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+ /* Skills Section */
+.skills {
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    animation: fadeIn 1s ease-in-out; /* Animation when the section appears */
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    text-transform: uppercase;
+  
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .skill-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    height: 12px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .progress-bar::after {
+    content: attr(data-progress);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .progress-bar .fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 1s ease-out;
+  }
+  
+  .skill-card .fill-java {
+    background: linear-gradient(90deg, #ff9800, #e65100);
+  }
+  
+  .skill-card .fill-react {
+    background: linear-gradient(90deg, #00bcd4, #00796b);
+  }
+  
+  .skill-card .fill-spring {
+    background: linear-gradient(90deg, #4caf50, #388e3c);
+  }
+  
+  /* Hover effect for skill progress bar */
+  .skill-card:hover .progress-bar .fill {
+    background: linear-gradient(90deg, #ffc107, #ff5722); /* Highlighted color on hover */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+ /* Technologies Section */
+.technologies {
+    padding: 40px 0;
+    background-color: #f1f1f1;
+  }
+  
+  .technologies h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .tech-icon i {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  
+  .tech-icon:hover i {
+    color: #6610f2;
+  }
+  
+  /* Adding Animation and Hover Effects */
+  .tech-icon img {
+    width: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tech-icon:hover img {
+    transform: scale(1.1) rotate(10deg); /* Scale up and rotate slightly */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  .tech-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .tech-icon:nth-child(1) {
+    animation: fadeIn 0.5s ease-in-out 0.1s forwards;
+  }
+  
+  .tech-icon:nth-child(2) {
+    animation: fadeIn 0.5s ease-in-out 0.2s forwards;
+  }
+  
+  .tech-icon:nth-child(3) {
+    animation: fadeIn 0.5s ease-in-out 0.3s forwards;
+  }
+  
+  .tech-icon:nth-child(4) {
+    animation: fadeIn 0.5s ease-in-out 0.4s forwards;
+  }
+  
+  .tech-icon:nth-child(5) {
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+  }
+  
+  /* Fade In Animation for Tech Icons */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* Slightly push icons from below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
