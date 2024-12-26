@@ -1,4 +1,3 @@
-```markdown
 # Project Portfolio 2.0
 
 This is my personal portfolio website built with React. It showcases my skills, projects, and experience as a software developer. The website is designed to be responsive and offers a smooth user experience across devices.
