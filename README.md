@@ -97,9 +97,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-Feel free to customize the sections above, such as the **Tech Stack**, **Deployment**, or **Contributing** section, depending on how your project is structured and the technologies used.
-```
-
 ### Key Sections of the README:
 1. **Project Description**: Gives an overview of what the project is about.
 2. **Features**: Lists the key features of your project.
@@ -110,5 +107,3 @@ Feel free to customize the sections above, such as the **Tech Stack**, **Deploym
 7. **Contributing**: How others can contribute to the project.
 8. **License**: The type of open-source license under which your project is released (MIT License in this case).
 9. **Acknowledgements**: Credits for tools and libraries used.
-
-This README will serve as a good starting point for anyone browsing your GitHub project to understand what it is and how they can use or contribute to it.
