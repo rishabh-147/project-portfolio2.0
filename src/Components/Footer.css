@@ -6,7 +6,7 @@
     width: 100%;
     background-color: #212121;  /* Dark background */
     color: white;
-    padding: 20px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,9 +23,18 @@
   }
   
   /* Left section: Copyright */
-  .footer-left {
-    text-align: left;
-  }
+/* Left section: Copyright */
+.footer-left {
+  display: flex;                /* Enable Flexbox */
+  align-items: center;          /* Vertically center the content */
+  justify-content: flex-start;  /* Align the text to the left horizontally (default) */
+  height: 100%;                 /* Ensure the div takes full height of its parent container */
+}
+
+.footer-left p {
+  margin: 0; /* Remove any default margins from the <p> tag */
+}
+
   
   /* Right section: Social Media Icons */
   .footer-right {

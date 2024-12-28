@@ -9,6 +9,9 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Project from "./Components/Project";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 function App() {
   return (
@@ -29,7 +32,6 @@ function App() {
           </Routes>
         </div>
 
-        {/* Footer is global and visible on all routes */}
         {/* <Footer /> */}
       </div>
     </Router>

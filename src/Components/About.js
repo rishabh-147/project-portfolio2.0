@@ -58,7 +58,7 @@ const About = () => {
                 <h3>Java</h3>
                 <div className="progress-bar" data-progress="80%">
                   <div
-                    className="fill fill-java"
+                    className="fill fill-spring"
                     style={{ width: "80%" }}
                   ></div>
                 </div>
@@ -67,7 +67,7 @@ const About = () => {
                 <h3>React</h3>
                 <div className="progress-bar" data-progress="70%">
                   <div
-                    className="fill fill-react"
+                    className="fill fill-spring"
                     style={{ width: "70%" }}
                   ></div>
                 </div>
@@ -77,7 +77,34 @@ const About = () => {
                 <div className="progress-bar" data-progress="75%">
                   <div
                     className="fill fill-spring"
+                    style={{ width: "85%" }}
+                  ></div>
+                </div>
+              </div>
+              <div className="skill-card">
+                <h3>Spring MVC</h3>
+                <div className="progress-bar" data-progress="75%">
+                  <div
+                    className="fill fill-spring"
+                    style={{ width: "90%" }}
+                  ></div>
+                </div>
+              </div>
+              <div className="skill-card">
+              <h3>MySQL</h3>
+                <div className="progress-bar" data-progress="75%">
+                  <div
+                    className="fill fill-spring"
                     style={{ width: "75%" }}
+                  ></div>
+                </div>
+              </div>
+              <div className="skill-card">
+                <h3>PostgreSQL</h3>
+                <div className="progress-bar" data-progress="75%">
+                  <div
+                    className="fill fill-spring"
+                    style={{ width: "90%" }}
                   ></div>
                 </div>
               </div>
@@ -124,7 +151,7 @@ const About = () => {
           </div>
         </section>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 };
