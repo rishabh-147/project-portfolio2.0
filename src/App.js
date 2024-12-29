@@ -24,11 +24,11 @@ function App() {
           {/* Define routes here */}
           <Routes>
             {/* Define actual routes */}
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/#/" element={<Home />} />
+            <Route path="/#/about" element={<About />} />
+            <Route path="/#/resume" element={<Resume />} />
+            <Route path="/#/project" element={<Project />} />
+            <Route path="/#/contact" element={<Contact />} />
           </Routes>
         </div>
 
