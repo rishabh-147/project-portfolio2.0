@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import userProfile from '../images/profile-pic.jpg';
 import './Header.css';
 
@@ -19,10 +20,10 @@ function Header() {
         {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav ms-auto">
-            <a className="nav-item nav-link" href="/resume">Resume</a>
-            <a className="nav-item nav-link" href="/project">Projects</a>
-            <a className="nav-item nav-link" href="/contact">Contact</a>
-            <a className="nav-item nav-link" href="/about">About</a>
+            <Link className="nav-item nav-link" to="/resume">Resume</Link> {/* Use Link instead of anchor tag */}
+            <Link className="nav-item nav-link" to="/project">Projects</Link>
+            <Link className="nav-item nav-link" to="/contact">Contact</Link>
+            <Link className="nav-item nav-link" to="/about">About</Link>
           </div>
         </div>
       </nav>

@@ -34,8 +34,7 @@ body, html {
 /* Navbar items styling */
 .navbar-nav {
   width: 100%;
-  padding: 0 1rem;
-
+  padding: 0 1rem; /* Ensure proper padding around the navbar items */
 }
 
 .navbar-nav .nav-item a.nav-link {
@@ -47,8 +46,8 @@ body, html {
 }
 
 .navbar-nav .nav-item a.nav-link:hover {
-  transform: translateY(-8px);
-  color: #ffc107;
+  transform: translateY(-8px); /* Add hover effect */
+  color: #ffc107; /* Change text color on hover */
 }
 
 /* Ensure mobile devices are properly responsive */
