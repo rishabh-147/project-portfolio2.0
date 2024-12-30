@@ -7,10 +7,10 @@ function Header() {
   return (
     <div className="navBar-style">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" href="/">
           <img src={userProfile} width="30" height="30" className="d-inline-block align-top rounded-circle" alt="Profile" />
           <span className="brand-name">Rishabh Tiwari</span>
-        </a>
+        </Link>
 
         {/* Hamburger Toggle Button */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
