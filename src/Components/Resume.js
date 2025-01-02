@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const Resume = () => {
   const onButtonClick = () => {
     const link = document.createElement("a");
-    link.href = "/Rishabh_Tiwari.pdf"; // Direct path to the file in the public directory
+    link.href = process.env.PUBLIC_URL + "/Rishabh_Tiwari.pdf"; // Direct path to the file in the public directory
     link.download = "Rishabh_Tiwari.pdf";
     link.click();
   };
