@@ -1,7 +1,14 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./Footer.css"; // Import the custom CSS for the footer
 
 function Footer() {
+  const location = useLocation();
+
+  if (location.pathname === "/") {
+    return null;
+  }
+
   return (
     <footer className="footer">
       <div className="footer-content">

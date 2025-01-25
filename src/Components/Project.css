@@ -4,44 +4,48 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('../images/under-maintainence.jpg') no-repeat center center fixed;
-  /* Replace with your image path */
+  background: linear-gradient(to right, #2C3E50, #7F8C8D);
+  background-image: url('../images/resume-mask.svg');
+
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   position: relative;
-
 }
 
 .coming-soon-content {
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  /* Slightly transparent background to enhance the glass effect */
+  background: #BDC3C7;
+  /* Light gray background */
   padding: 40px;
   border-radius: 15px;
   transform: translateY(-50px);
   /* Move the card upwards by 50px */
-
-  color: white;
-  width: 100%;
+  color: #2C3E50;
+  /* Dark blue text */
+  width: 90%;
   max-width: 500px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
-  /* Apply blur for the glass effect */
+  /* Blur effect */
   -webkit-backdrop-filter: blur(8px);
   /* Safari compatibility */
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  /* Optional: adds a subtle border to enhance the glassy effect */
+  border: 1px solid #2C3E50;
+  /* Dark blue border */
 }
 
 .coming-soon-title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #2C3E50;
+  /* White text */
 }
 
 .coming-soon-message {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #2C3E50;
+  /* Dark blue text */
 }
 
 .coming-soon-animation {
@@ -54,7 +58,8 @@
 .coming-soon-animation .dot {
   width: 10px;
   height: 10px;
-  background-color: #007bff;
+  background-color: #2C3E50;
+  /* Dark blue background */
   border-radius: 50%;
   animation: dotAnimation 1s infinite ease-in-out;
 }

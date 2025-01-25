@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
@@ -12,13 +12,21 @@ import Project from "./Components/Project";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+function FooterWrapper() {
+  const location = useLocation();
+
+  return location.pathname !== "/" && <Footer />;
+}
+
 function App() {
   return (
     <Router>
+      <>
       <div className="main-container">
         {/* Header is global and visible on all routes */}
         <Header />
-
+        </div>
+        
         <div className="bodyWrapper">
           {/* Define routes here */}
           <Routes>
@@ -29,10 +37,11 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
+        
 
-        {/* <Footer /> */}
       </div>
+        <FooterWrapper />
+        </>
     </Router>
   );
 }

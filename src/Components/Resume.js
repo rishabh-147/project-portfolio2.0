@@ -14,7 +14,7 @@ const Resume = () => {
     <div className="resume-page">
       <div className="resume-card">
         <h1>My Resume</h1>
-        <p>Welcome to my resume page. Feel free to download my resume:</p>
+        <p> Feel free to download my resume by clicking the buttons below</p>
 
         {/* Google Drive Link */}
         <div className="download-link">
@@ -28,11 +28,11 @@ const Resume = () => {
         </div>
 
         {/* Direct download from the public folder */}
-        <div className="download-link temp-Down">
+        <div className="download-link">
           <a onClick={onButtonClick}>Download Resume (PDF)</a>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

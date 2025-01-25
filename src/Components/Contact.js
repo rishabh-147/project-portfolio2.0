@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-form-card">
-        <h2>Contact Us</h2>
+        <h2 style={{fontWeight: 600}}><u>Contact Us</u></h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Your Name</label>
@@ -90,10 +90,10 @@ const Contact = () => {
           <button type="submit" disabled={isSubmitting}>
             Send Message
           </button>
-          {formStatus && <p className="form-status">{formStatus}</p>}
+          {formStatus && <p className="form-status" style={{fontWeight: 600, fontSize: 18}}>{formStatus}</p>}
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

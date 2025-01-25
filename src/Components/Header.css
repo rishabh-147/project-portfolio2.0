@@ -1,7 +1,7 @@
 /* Prevent both horizontal and vertical scrolling */
 body, html {
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: auto; 
   margin: 0;
   padding: 0;
 }

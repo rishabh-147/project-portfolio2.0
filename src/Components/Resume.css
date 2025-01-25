@@ -1,86 +1,105 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    overflow: hidden;
-  }
-  
-  .resume-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../images/resume-bg.jpg'); /* Replace with your own background */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-  }
-  
-  .resume-card {
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.7); /* Translucent background */
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
-    position: relative;
-  transform: translateY(-50px); /* Move the card upwards by 50px */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7F8C8D; /* Light gray background */
+  color: #2C3E50; /* Dark blue text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
 
-  }
-  
-  .resume-card h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .resume-card p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .download-link{
-    padding: 10px;
-  }
-  .download-link a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .download-link a:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-  }
-  
-  /* Add responsiveness */
-  @media (max-width: 768px) {
-    .resume-card {
-      width: 90%;
-    }
-  }
-  
-  /* Add fade-in animation */
+/* Resume Page */
+/* .resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #2C3E50, #7F8C8D);
+  background-size: cover;
+  background-attachment: fixed; /* Make the background fixed while scrolling */
+ /* position: relative;
+  color: #ECF0F1; /* White text */
+  /*font-family: 'Roboto', sans-serif;
+} */
+
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../images/resume-mask.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #ECF0F1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.resume-page:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #2C3E50, #7F8C8D);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+}
+
 .resume-card {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
+  background: #BDC3C7; /* Light gray background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Blur effect */
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  transform: translateY(-50px); /* Move the card upwards by 50px */
+}
 
-  .download-link+.temp-Down a:hover {
-    background-color: #df0f0f;
-    transform: scale(1.05);
-  }
+.resume-card h1 {
+  font-size: 2.5rem;
+  color: #2C3E50; /* Dark blue text */
+  margin-bottom: 20px;
+}
+
+.resume-card p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #2C3E50; /* Dark blue text */
+}
+
+.download-link {
+  padding: 10px;
+}
+
+.download-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2C3E50; /* Dark blue background */
+  color: #ECF0F1; /* White text */
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-link a:hover {
+  background-color: #2C3E50; /* Dark blue background */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+.download-link+.temp-Down a:hover {
+  background-color: #7F8C8D; /* Light gray background */
+  transform: scale(1.05); /* Slight scale effect */
+}

@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import userProfile from '../images/profile-pic.jpg';
 import './Header.css';
 
 function Header() {
+  const handleExpansion = () => {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    navbarToggler.click();
+  }
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach((link) => {
+      link.addEventListener('click', handleExpansion);
+    })
+  }, [])
+
   return (
     <div className="navBar-style">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <img src={userProfile} width="30" height="30" className="d-inline-block align-top rounded-circle" alt="Profile" />
           <span className="brand-name">Rishabh Tiwari</span>
         </Link>
