@@ -15,16 +15,51 @@ const Home = () => {
         <div className="bio">
           <h1>Hi, I'm Rishabh Tiwari</h1>
           <p>
-            I’m a software developer at <span className="strong-text"> <u>Mindgate Solutions</u></span>, currently working
-            with {" "}<span className="strong-text"> <u>NPCI</u> </span> on settlement
-            systems. I’m contributing to the{" "}
-            <span className="strong-text"><u>ONDC</u>, <u> NOCS</u>, <u>IBMB</u> </span>
-            project, enhancing digital commerce interoperability. Passionate
-            about leveraging technology to improve financial systems and drive
-            innovation. <br/>
-            <span className="strong-text"><u>Let's connect and work together!</u></span>
+            I’m a software developer at{" "}
+            <span className="strong-text">
+              <u>
+                <a className="a-link" href="https://www.mindgate.solutions/">Mindgate Solutions</a>
+              </u>
+            </span>
+            , currently working with the{" "}
+            <span className="strong-text">
+              <u>
+                <a className="a-link" href="https://www.npci.org.in/">
+                  National Payments Corporation of India (NPCI)
+                </a>
+              </u>
+            </span>{" "}
+            on the{" "}
+            <span className="strong-text">
+              <u>
+                <a className="a-link" href="https://www.linkedin.com/pulse/understanding-nocs-reconciliation-settlement-platform-ondc/">
+                  NOCS
+                </a>
+              </u>
+            </span>{" "}
+            project. NOCS, launched by{" "}
+            <span className="strong-text">
+              <u>
+                <a className="a-link" href="https://www.npci.org.in/who-we-are/group-companies/npci-bharat-billpay-ltd/bharat-billpay-overview">
+                  NPCI Bharat BillPay Ltd. (NBBL)
+                </a>
+              </u>
+            </span>
+            , handles reconciliation and settlement for transactions within the{" "}
+            <span className="strong-text">
+              <u>
+                <a className="a-link" href="https://ondc.org/ondc-buyer-apps/">ONDC</a>
+              </u>
+            </span>{" "}
+            network. Additionally, I contribute to NBBL’s broader efforts in
+            supporting the bill payment ecosystem across India.
+            <br />
+            <span className="strong-text">
+              <u>Let's connect and collaborate!</u>
+            </span>
           </p>
         </div>
+
         {/* Button Container at Bottom */}
         <div className="button-container">
           <Link to="/resume" className="button">

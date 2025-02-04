@@ -37,6 +37,7 @@
   width: 80vw;
   margin: 0 auto; /* Prevents content from hitting the edges */
   z-index: 1; /* Ensure the content is above the blurred background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 /* Profile Image Styles */
@@ -46,10 +47,10 @@
 
 .profile-img {
   border-radius: 50%;
-  width: 150px;
+  width: 140px;
   height: 150px;
   object-fit: cover;
-  border: 5px solid #ECF0F1; /* White border around image */
+  border: 2px solid #2C3E50; /* White border around image */
 }
 
 /* Bio Section */
@@ -68,6 +69,16 @@
   font-weight: 300;
   line-height: 1.6; /* Better line spacing for readability */
   color: #2C3E50; /* Dark blue text */
+}
+
+.a-link{
+  text-decoration: none;
+  color: #2C3E50;
+}
+
+.a-link:hover{
+  color: #4682b4  ;
+  
 }
 
 /* Button Container */
