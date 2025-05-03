@@ -140,7 +140,8 @@
   }
   
   .modal-content {
-    background: #fff;
+    background-color: #fff !important;
+    color: #000 !important;
     padding: 30px;
     border-radius: 10px;
     width: 90%;
@@ -149,6 +150,7 @@
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
   }
+  
   
   .modal-close {
     position: absolute;
