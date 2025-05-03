@@ -1,46 +1,25 @@
-/* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
-
-/* General Styles for the Landing Page */
 .home-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative; /* Allow positioning of the pseudo-element */
-  font-family: 'Poppins', sans-serif; /* Main body font */
-  color: #ECF0F1; /* White text */
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: #2C3E50;
+  background-color: #f0f4f8; /* Light background color */
   flex-direction: column;
 }
 
-/* Adding blur effect to the background using ::before pseudo-element */
-.home-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #2C3E50, #7F8C8D);
-  background-size: cover;
-  filter: blur(10px); /* Adjust the blur intensity here */
-  z-index: -1; /* Make sure the pseudo-element is behind the content */
-}
-
-/* Home Content */
 .home-content {
   text-align: center;
+  background: #ffffff;
   padding: 40px;
-  background: #BDC3C7; /* Light gray background */
   border-radius: 15px;
-  max-width: 900px; /* Limiting the max width to prevent stretching */
-  width: 80vw;
-  margin: 0 auto; /* Prevents content from hitting the edges */
-  z-index: 1; /* Ensure the content is above the blurred background */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  max-width: 900px;
 }
 
-/* Profile Image Styles */
 .profile-img-container {
   margin-bottom: 20px;
 }
@@ -48,37 +27,43 @@
 .profile-img {
   border-radius: 50%;
   width: 140px;
-  height: 150px;
+  height: 140px;
   object-fit: cover;
-  border: 2px solid #2C3E50; /* White border around image */
+  border: 2px solid #2980B9; /* Light blue border */
 }
 
-/* Bio Section */
 .bio h1 {
-  font-family: 'Playfair Display', serif; /* Elegant heading font */
   font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #2980B9;
   margin-top: 10px;
-  font-weight: 700;
-  color: #2C3E50; /* Dark blue text */
 }
 
 .bio p {
-  font-family: 'Poppins', sans-serif; /* Clean body font */
   font-size: 1.2rem;
+  line-height: 1.7;
+  color: #333;
   margin: 15px 0;
-  font-weight: 300;
-  line-height: 1.6; /* Better line spacing for readability */
-  color: #2C3E50; /* Dark blue text */
 }
 
-.a-link{
+.a-link {
   text-decoration: none;
-  color: #2C3E50;
+  color: #2980B9;
 }
 
-.a-link:hover{
-  color: #4682b4  ;
-  
+.a-link:hover {
+  color: #3498DB;
+}
+
+.strong-text {
+  font-weight: bold;
+}
+
+.company-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 /* Button Container */
@@ -86,39 +71,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .button {
-  background-color: #2C3E50; /* Dark blue background */
-  color: #ECF0F1; /* White text */
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
+  background-color: #2980B9;
+  color: white;
+  padding: 14px 30px;
+  font-size: 1.1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s, transform 0.3s;
   margin: 10px;
-  width: calc(33.33% - 20px); /* Adjust the width to display 3 buttons in a line */
+  display: inline-block;
 }
 
 .button:hover {
-  background-color: #2C3E50; /* Dark blue background */
-  transform: scale(1.1);
+  background-color: #3498DB;
+  transform: translateY(-5px);
 }
 
 .button:active {
-  transform: scale(1);
+  transform: translateY(1px);
 }
 
-/* Responsive Design */
+/* Media Query for Mobile */
 @media (max-width: 767px) {
   .home-content {
-    margin: 0 10px;
     padding: 20px;
+    width: 95%;
   }
 
   .profile-img {
@@ -126,69 +107,8 @@
     height: 120px;
   }
 
-  .bio h1 {
-    font-size: 2rem;
-  }
-
-  .bio p {
-    font-size: 1rem;
-  }
-
   .button {
-    padding: 8px 15px;
-  }
-}
-
-@media (max-width: 573px) {
-  .home-content {
-    margin-top: 60px;
-  }
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .button {
-    margin-bottom: 10px;
     width: 100%;
-    text-align: center;
+    padding: 12px;
   }
-}
-
-@media (min-width: 487px) {
-  .home-content {
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 487px) {
-  .home-content {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 375px) {
-  .home-content {
-    padding: 10px;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 487px) {
-  .button {
-    width: calc(50% - 20px); /* Adjust the width to display 2 buttons in a line on smaller screens */
-  }
-}
-
-@media (max-width: 375px) {
-  .button {
-    width: 100%; /* Adjust the width to display 1 button in a line on very small screens */
-  }
-}
-
-
-
-.strong-text{
-  font-weight: 700;
-  font-size: large;
 }
