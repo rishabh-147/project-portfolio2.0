@@ -3,85 +3,88 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ensures full viewport height */
-  background: linear-gradient(to right, #2C3E50, #7F8C8D);
+  height: 100vh;
+  background: linear-gradient(to right, #1d2c3f, #4b6a85); /* Smooth gradient background */
   background-size: cover;
-  background-image: url('../images/resume-mask.svg');
-
-  background-attachment: fixed; /* Make the background fixed while scrolling */
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
-  color: #ECF0F1; /* White text */
   font-family: 'Roboto', sans-serif;
+  color: #ECF0F1;
 }
 
 .contact-form-card {
-  background: #BDC3C7; /* Light gray background */
+  background: #ffffff; /* White background for better readability */
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for card */
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
-  transform: translateY(-50px); /* Move the card upwards by 50px */
+  transform: translateY(-60px); /* Move the card upwards slightly */
+  backdrop-filter: blur(5px); /* Subtle blur effect */
 }
 
 .contact-form-card h2 {
-  font-size: 2rem;
-  color: #2C3E50; /* Dark blue text */
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #2C3E50;
+  margin-bottom: 25px;
+  font-weight: bold;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
 .form-group label {
   display: block;
   font-size: 1.1rem;
-  margin-bottom: 5px;
-  color: #2C3E50; /* Dark blue text */
-  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2C3E50;
+  font-weight: 600;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px; /* Slightly rounded corners */
   outline: none;
-  transition: border 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #2C3E50; /* Dark blue border */
+  border-color: #2C3E50; /* Dark blue border when focused */
 }
 
 button {
-  background-color: #2C3E50; /* Dark blue background */
-  color: #ECF0F1; /* White text */
+  background-color: #2C3E50; /* Dark blue */
+  color: #fff;
   padding: 15px 30px;
   font-size: 1.1rem;
-  border: 1px #2C3E50 solid;
-  border-radius: 30px; /* Make the button more rounded */
+  border: 1px solid #2C3E50;
+  border-radius: 50px; /* Rounded button */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:disabled {
-  background-color: #7F8C8D; /* Light gray background */
+  background-color: #BDC3C7; /* Disabled color */
   cursor: not-allowed;
 }
 
 button:hover {
-  background-color: #2C3E50; /* Dark blue background */
+  background-color: #1d2c3f; /* Slightly darker on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 .form-status {
   margin-top: 15px;
-  color: #2C3E50; /* Dark blue text */
+  color: #1d2c3f;
+  font-weight: 600;
+  font-size: 18px;
 }

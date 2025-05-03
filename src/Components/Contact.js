@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import Footer from "./Footer";
-import bgimg from "../images/46515.jpg";
 
 const Contact = () => {
   const [name, setName] = useState(""); // State for name
@@ -49,7 +47,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-form-card">
-        <h2 style={{fontWeight: 600}}><u>Contact Us</u></h2>
+        <h2><u>Contact Us</u></h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Your Name</label>
@@ -90,10 +88,9 @@ const Contact = () => {
           <button type="submit" disabled={isSubmitting}>
             Send Message
           </button>
-          {formStatus && <p className="form-status" style={{fontWeight: 600, fontSize: 18}}>{formStatus}</p>}
+          {formStatus && <p className="form-status">{formStatus}</p>}
         </form>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
