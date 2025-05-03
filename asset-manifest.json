@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/project-portfolio2.0/static/css/main.a348c145.css",
+    "main.css": "/project-portfolio2.0/static/css/main.a8d736d6.css",
     "main.js": "/project-portfolio2.0/static/js/main.bde667c6.js",
     "static/media/fa-solid-900.ttf": "/project-portfolio2.0/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/hybrid-cryptography.png": "/project-portfolio2.0/static/media/hybrid-cryptography.709ef43d479f3cc32d19.png",
@@ -17,11 +17,11 @@
     "static/media/logo.svg": "/project-portfolio2.0/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/resume-mask.svg": "/project-portfolio2.0/static/media/resume-mask.5fe5b4f4b62ef0003fb3.svg",
     "index.html": "/project-portfolio2.0/index.html",
-    "main.a348c145.css.map": "/project-portfolio2.0/static/css/main.a348c145.css.map",
+    "main.a8d736d6.css.map": "/project-portfolio2.0/static/css/main.a8d736d6.css.map",
     "main.bde667c6.js.map": "/project-portfolio2.0/static/js/main.bde667c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a348c145.css",
+    "static/css/main.a8d736d6.css",
     "static/js/main.bde667c6.js"
   ]
 }
