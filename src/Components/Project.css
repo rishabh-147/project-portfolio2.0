@@ -1,107 +1,81 @@
-/* ComingSoon.css */
-.coming-soon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #2C3E50, #7F8C8D);
-  background-image: url('../images/resume-mask.svg');
-
-  background-size: cover;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-}
-
-.coming-soon-content {
-  text-align: center;
-  background: #BDC3C7;
-  /* Light gray background */
-  padding: 40px;
-  border-radius: 15px;
-  transform: translateY(-50px);
-  /* Move the card upwards by 50px */
-  color: #2C3E50;
-  /* Dark blue text */
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px);
-  /* Blur effect */
-  -webkit-backdrop-filter: blur(8px);
-  /* Safari compatibility */
-  border: 1px solid #2C3E50;
-  /* Dark blue border */
-}
-
-.coming-soon-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #2C3E50;
-  /* White text */
-}
-
-.coming-soon-message {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #2C3E50;
-  /* Dark blue text */
-}
-
-.coming-soon-animation {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  animation: blinkDots 1.5s infinite step-start;
-}
-
-.coming-soon-animation .dot {
-  width: 10px;
-  height: 10px;
-  background-color: #2C3E50;
-  /* Dark blue background */
-  border-radius: 50%;
-  animation: dotAnimation 1s infinite ease-in-out;
-}
-
-.coming-soon-animation .dot:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.coming-soon-animation .dot:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.coming-soon-animation .dot:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-@keyframes dotAnimation {
-
-  0%,
-  100% {
-    transform: scale(1);
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 5vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #f9f9f9, #c1f6fc);
+  }
+  
+  .projects-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #222;
+    text-align: center;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .projects-heading {
+      font-size: 2rem;
+    }
+  
+    .projects-grid {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-heading {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-section {
+      padding: 30px 15px;
+    }
+  
+    .projects-heading {
+      font-size: 1.5rem;
+    }
   }
 
-  50% {
-    transform: scale(1.5);
-  }
-}
+  /* Add to the existing ProjectsPage.css */
 
-@keyframes blinkDots {
-  0% {
-    opacity: 1;
+.projects-footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fffdfd;
+    padding: 20px 10px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    max-width: 900px;
   }
-
-  33% {
-    opacity: 0.5;
+  
+  /* Optional: Responsive tweak */
+  @media (max-width: 480px) {
+    .projects-footer {
+      font-size: 1rem;
+      padding: 15px 5px;
+    }
   }
-
-  66% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
+  
+  

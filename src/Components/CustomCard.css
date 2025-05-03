@@ -1,0 +1,178 @@
+.custom-card {
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.custom-card-info {
+    padding: 15px;
+    position: relative;
+}
+
+.custom-card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.custom-card-description {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #444;
+    position: relative;
+}
+
+.short-desc {
+    display: inline;
+}
+
+.full-desc {
+    display: none;
+}
+
+.custom-card .short-desc{
+    display: none;
+}
+
+.custom-card .full-desc {
+    display: inline;
+}
+
+.github-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background-color: #0366d6;
+  }
+
+  /* Card styles (unchanged) */
+.custom-card {
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .custom-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .custom-card-info {
+    padding: 15px;
+  }
+  
+  .custom-card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .custom-card-description {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .github-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 12px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background-color: #0366d6;
+  }
+  
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(42, 42, 42, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  .modal-description {
+    list-style: disc;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
