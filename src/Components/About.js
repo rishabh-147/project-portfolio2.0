@@ -1,158 +1,92 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
-import Footer from "./Footer";
+import CustomCard from "./CustomCard";
+import AZ900Badge from "../images/AZ-900-Badge.png"; // initial badge
+import AZ900Cert from "../images/AZ-900-Cert.png"; // actual certificate
+
+const techCards = [
+  { title: "Java", image: "https://icon.icepanel.io/Technology/svg/Java.svg" },
+  { title: "React", image: "https://icon.icepanel.io/Technology/svg/React.svg" },
+  { title: "Spring Boot", image: "https://icon.icepanel.io/Technology/svg/Spring.svg" },
+  { title: "MySQL", image: "https://icon.icepanel.io/Technology/svg/MySQL.svg" },
+  { title: "PostgreSQL", image: "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" },
+  { title: "Postman", image: "https://icon.icepanel.io/Technology/svg/Postman.svg" },
+];
 
 const About = () => {
-  const [typedText, setTypedText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0); // Track the current technology index
-  const [fadeOut, setFadeOut] = useState(false); // To trigger fade out effect
-  const technologies = ["Java", "React", "Spring Boot", "MySQL"];
+  const [isCertClicked, setIsCertClicked] = useState(false);
 
   useEffect(() => {
-    const typingInterval = setInterval(() => {
-      // Trigger fade-out first
-      setFadeOut(true);
+    const techCards = document.querySelectorAll(".technologies-container .custom-card");
+    techCards.forEach((card) => {
+      card.onclick = (e) => e.stopPropagation(); // disable click
+      card.style.cursor = "default";
+    });
+  }, []);
 
-      setTimeout(() => {
-        // Change to the next technology
-        setTypedText(technologies[currentIndex]);
-
-        // After the fade-out, trigger fade-in
-        setFadeOut(false);
-
-        // Move to the next technology
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % technologies.length);
-      }, 500); // Delay before changing text
-    }, 2000); // Change text every 2 seconds
-
-    return () => clearInterval(typingInterval); // Cleanup interval on component unmount
-  }, [currentIndex]);
+  const certificationCard = {
+    title: "Microsoft Azure Fundamentals (AZ-900)",
+    image: isCertClicked ? AZ900Cert : AZ900Badge,
+    shortDescription:
+      "Foundational knowledge in cloud concepts, Azure services, SLA, security & governance. Issued: March 2024",
+    fullDescription: [],
+  };
 
   return (
-    <>
-      <div className="about-us fade-in">
-        {/* Header Section */}
-        <header className="header">
-          <div className="container">
-            <h1>
-              Hi, I'm <span className="highlight">Rishabh Tiwari</span>
-            </h1>
-            <p>I'm a passionate Software Developer</p>
-            <div className="typing-effect">
-              Technologies I love:{" "}
-              <span
-                className={`tech-highlight ${fadeOut ? "fade-out" : "fade-in"}`}
-              >
-                {typedText}
-              </span>
-            </div>
-          </div>
-        </header>
+    <div className="about-section">
+      <h1 className="about-heading">👋 Hi, I'm <span className="highlight">Rishabh Tiwari</span></h1>
+      <p className="about-subheading">A passionate Software Developer</p>
 
-        {/* Skills Section */}
-        <section className="skills">
-          <div className="container">
-            <h2>My Skills</h2>
-            <div className="skills-list">
-              <div className="skill-card">
-                <h3>Java</h3>
-                <div className="progress-bar" data-progress="80%">
-                  <div
-                    className="fill fill-spring"
-                    style={{ width: "80%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="skill-card">
-                <h3>React</h3>
-                <div className="progress-bar" data-progress="70%">
-                  <div
-                    className="fill fill-spring"
-                    style={{ width: "70%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="skill-card">
-                <h3>Spring Boot</h3>
-                <div className="progress-bar" data-progress="75%">
-                  <div
-                    className="fill fill-spring"
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="skill-card">
-                <h3>Spring MVC</h3>
-                <div className="progress-bar" data-progress="75%">
-                  <div
-                    className="fill fill-spring"
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="skill-card">
-              <h3>MySQL</h3>
-                <div className="progress-bar" data-progress="75%">
-                  <div
-                    className="fill fill-spring"
-                    style={{ width: "75%" }}
-                  ></div>
-                </div>
-              </div>
-              <div className="skill-card">
-                <h3>PostgreSQL</h3>
-                <div className="progress-bar" data-progress="75%">
-                  <div
-                    className="fill fill-spring"
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* Bio */}
+    {/* About Me / Bio Section */}
+      <section className="bio-container">
+        <h2 className="section-title">About Me</h2>
+        <div className="bio-box">
+          <p><strong>🎓 Education:</strong> B.Tech in Computer Science from Dr. MGR Educational and Research Institute (CGPA: 8.71)</p>
+          <p><strong>📍 Location:</strong> Chennai, Tamil Nadu, India</p>
+          <p><strong>💼 Interests:</strong> Passionate about crafting impactful software and constantly exploring new challenges in development.</p>
+          <p><strong>📜 Certification:</strong> Microsoft Azure Fundamentals (AZ-900), validating my foundation in cloud, security, and governance principles.</p>
+          <p><strong>📬 Contact:</strong> <a href="mailto:onlinestuff.rishabh@gmail.com">onlinestuff.rishabh@gmail.com</a> | 📱 +91-8960151997</p>
+        </div>
+      </section>
 
-        {/* Technologies Section */}
-        <section className="technologies">
-          <div className="container">
-            <h2>Technologies I Work With</h2>
-            <div className="tech-icons">
-              <div className="tech-icon" title="Java">
-                <img
-                  src="https://icon.icepanel.io/Technology/svg/Java.svg"
-                  alt="Java"
-                />
-              </div>
-              <div className="tech-icon" title="React">
-                <img
-                  src="https://icon.icepanel.io/Technology/svg/React.svg"
-                  alt="React"
-                />
-              </div>
-              <div className="tech-icon" title="Spring Boot">
-                <img
-                  src="https://icon.icepanel.io/Technology/svg/Spring.svg"
-                  alt="Spring Boot"
-                />
-              </div>
-              <div className="tech-icon" title="MySQL">
-                <img
-                  src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg"
-                  alt="Postgres SQL"
-                />
-              </div>
-              <div className="tech-icon" title="Postman">
-                <img
-                  src="https://icon.icepanel.io/Technology/svg/Postman.svg"
-                  alt="Postman"
-                />
-              </div>
-            </div>
+
+      {/* Certifications */}
+      <section className="certifications-container">
+        <h2 className="section-title">Certifications</h2>
+        <div className="cert-grid">
+          <div
+            onClick={() => setIsCertClicked(!isCertClicked)}
+            style={{ cursor: "pointer" }}
+          >
+            <CustomCard
+              title={certificationCard.title}
+              image={certificationCard.image}
+              shortDescription={certificationCard.shortDescription}
+              fullDescription={certificationCard.fullDescription}
+              githubLink={null}
+            />
           </div>
-        </section>
-      </div>
-      {/* <Footer/> */}
-    </>
+        </div>
+      </section>
+
+      {/* Technologies */}
+      <section className="technologies-container">
+        <h2 className="section-title">Technologies I Work With</h2>
+        <div className="tech-grid">
+          {techCards.map((tech, index) => (
+            <CustomCard
+              key={index}
+              title={tech.title}
+              image={tech.image}
+              shortDescription=""
+              fullDescription={[]}
+              githubLink={null}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

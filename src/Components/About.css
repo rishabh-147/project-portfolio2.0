@@ -1,218 +1,145 @@
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
 
-/* Global Styles */
-body {
-  font-family: 'Playfair Display', serif;
-  margin: 0;
-  padding: 0;
-  background-color: #7F8C8D; /* Light gray background */
-  color: #2C3E50; /* Dark blue text */
-  display: flex;
-  flex-direction: column;
+.about-section {
+  padding: 5vh 5vw;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-}
-
-/* Viewport meta tag */
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-/* About Us Section */
-.about-us {
+  background: linear-gradient(to bottom right, #f9f9f9, #c1f6fc);
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding-bottom: 20px;
-  overflow-x: hidden;
-  scroll-behavior: smooth; /* Smooth scroll */
-  background-color: #BDC3C7; /* Light gray background */
-}
-
-/* Container for centering content */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 15px;
-}
-
-/* Header Section */
-.header {
+  align-items: center;
   text-align: center;
-  padding: 40px 0;
-  background: linear-gradient(to right, #2C3E50, #7F8C8D);
-  color: #ECF0F1; /* White text */
 }
 
-.header h1 {
-  font-size: 2.5rem;
+.bio-box {
+  background-color: #ffffffd8;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
 }
 
-.header .highlight {
-  color: #ECF0F1; /* White text */
+.bio-box p {
+  margin: 10px 0;
 }
 
-.header p {
-  font-size: 1.2rem;
-  margin-top: 15px;
+.bio-box a {
+  color: #0366d6;
+  text-decoration: none;
 }
 
-/* Typing Effect */
-.typing-effect {
-  font-size: 1.5rem;
-  margin-top: 20px;
+.bio-box a:hover {
+  text-decoration: underline;
 }
 
-.typing-effect .tech-highlight {
-  font-family: 'Courier New', Courier, monospace;
+
+.about-heading {
+  font-size: 2.8rem;
   font-weight: bold;
-  color: #2C3E50; /* Dark blue text */
-  display: inline-block;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  color: #222;
+  margin-bottom: 10px;
 }
 
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+.highlight {
+  color: #0077cc;
 }
 
-.fade-out {
-  opacity: 0;
+.about-subheading {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 40px;
 }
 
-/* Skills Section */
-.skills {
-  padding: 40px 0;
-  background-color: #2C3E50; /* Dark blue background */
-  animation: fadeIn 1s ease-in-out;
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #222;
 }
 
-.skills h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #ECF0F1; /* White text */
-  text-transform: uppercase;
+.skills-container {
+  margin-bottom: 60px;
 }
 
 .skills-list {
+  list-style: none;
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-.skill-card {
-  background: #BDC3C7; /* Light gray background */
+.skills-list li {
+  background-color: #ffffff;
+  padding: 12px 20px;
   border-radius: 8px;
-  padding: 20px;
-  width: 30%;
-  min-width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.skill-card:hover {
-  transform: scale(1.1); /* Slight scale effect */
-  background: #b4d5eb;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.skill-card h3 {
-  font-size: 1.5rem;
-  color: #2C3E50; /* Dark blue text */
-  margin-bottom: 20px;
-}
-
-.progress-bar {
-  background-color: #7F8C8D; /* Light gray background */
-  height: 12px;
-  border-radius: 8px;
-  position: relative;
-}
-
-.progress-bar .fill {
-  height: 100%;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #2C3E50, #7F8C8D);
-  transition: width 1s ease-out;
-}
-
-/* Technologies Section */
-.technologies {
-  padding: 40px 0;
-  margin-bottom: 50px;
-  background-color: #BDC3C7; /* Light gray background */
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.technologies h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2C3E50; /* Dark blue text */
-}
-
-.tech-icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.tech-icon {
-  display: inline-block;
-  transition: opacity 0.3s ease;
-  opacity: 1;
-}
-
-.tech-icon img {
-  width: 50px;
-  transition: transform 0.3s ease;
-  filter: invert(1); /* Invert the icon color to make it visible on light background */
-}
-
-.tech-icon:hover img {
-  transform: scale(1.8); /* Slight scale effect */
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.tech-icon:nth-child(1) {
-  animation: fadeIn 0.5s ease-in-out 0.1s forwards;
-}
-
-.tech-icon:nth-child(2) {
-  animation: fadeIn 0.5s ease-in-out 0.2s forwards;
-}
-
-.tech-icon:nth-child(3) {
-  animation: fadeIn 0.5s ease-in-out 0.3s forwards;
-}
-
-.tech-icon:nth-child(4) {
-  animation: fadeIn 0.5s ease-in-out 0.4s forwards;
-}
-
-.tech-icon:nth-child(5) {
-  animation: fadeIn 0.5s ease-in-out 0.5s forwards;
-}
-/* Footer */
-footer {
-  padding: 20px 0;
-  background-color: #2C3E50; /* Dark blue background */
-  color: #ECF0F1; /* White text */
-  text-align: center;
+.technologies-container {
+  margin-bottom: 60px;
   width: 100%;
+  max-width: 1200px;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Hide unnecessary elements in CustomCard */
+.custom-card .custom-card-description,
+.custom-card .github-button {
+  display: none !important;
+}
+
+.bio-container {
+  margin-bottom: 60px;
+  max-width: 900px;
+  text-align: left;
+}
+
+.bio-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.certifications-container {
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.technologies-container .custom-card-image {
+  height: 120px;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+
+/* Ensuring the badge fits within the card */
+.certifications-container .custom-card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background-color: #f5f5f5;
 }
