@@ -14,54 +14,34 @@ const Home = () => {
         <div className="bio">
           <h1>👋 Hi, I'm Rishabh Tiwari!</h1>
           <p>
-            I’m a software developer at{" "}
-            <span className="strong-text">
-              <u>
-                <a className="a-link" href="https://www.mindgate.solutions/">
-                  Mindgate Solutions
-                </a>
-              </u>
-            </span>
-            , currently working on an exciting project with the{" "}
-            <span className="strong-text">
-              <u>
-                <a className="a-link" href="https://www.npci.org.in/">
-                  National Payments Corporation of India (NPCI)
-                </a>
-              </u>
-            </span>{" "}
-            - working on the{" "}
-            <span className="strong-text">
-              <u>
-                <a className="a-link" href="https://www.linkedin.com/pulse/understanding-nocs-reconciliation-settlement-platform-ondc/">
-                  NOCS 
-                </a>
-              </u>
-            </span>{" "}
-            project! 
+            I’m a <strong>Software Developer</strong> with <strong>1.5+ years of experience</strong>, 
+            focused on building robust backend systems using 
+            <strong> Java</strong>, <strong>Spring Boot</strong>, and <strong>Spring MVC</strong>. 
+            I'm proficient in <strong>JSP</strong> and work comfortably with relational databases like 
+            <strong> MySQL</strong> and <strong>PostgreSQL</strong>.
+          </p>
+
+          <p>
+            On the frontend, I’ve built interfaces using <strong>React.js</strong> and JSP, 
+            enabling me to work seamlessly across the full stack.
+          </p>
+
+          <p>
+            Currently, I’m part of the team at{" "}
+            <a className="a-link" href="https://www.mindgate.solutions/" target="_blank" rel="noreferrer">
+              <u>Mindgate Solutions</u>
+            </a>
+            , where I manage backend systems for the{" "}
+            <a className="a-link" href="https://www.npci.org.in/" target="_blank" rel="noreferrer">
+              <u>National Payments Corporation of India (NPCI)</u>
+            </a>
+            —the organization behind India’s central payment infrastructure.
+          </p>
+
+          <p>
+            I'm passionate about creating impactful digital solutions and contributing to systems that reach millions.
             <br />
-            NOCS, launched by{" "}
-            <span className="strong-text">
-              <u>
-                <a className="a-link" href="https://www.npci.org.in/who-we-are/group-companies/npci-bharat-billpay-ltd/bharat-billpay-overview">
-                  NPCI Bharat BillPay Ltd. (NBBL)
-                </a>
-              </u>
-            </span>
-            , handles reconciliation and settlement for transactions within the{" "}
-            <span className="strong-text">
-              <u>
-                <a className="a-link" href="https://ondc.org/ondc-buyer-apps/">
-                  ONDC 
-                </a>
-              </u>
-            </span>{" "}
-            network.
-            <br />
-            I’m passionate about leveraging technology to create real-world impact, and I also contribute to NBBL’s broader efforts in supporting the bill payment ecosystem across India.{" "}
-            <br/><span className="strong-text">
-              <u>Let’s connect and collaborate! 🤝</u>
-            </span>
+            <strong><u>Let’s connect and collaborate! 🤝</u></strong>
           </p>
         </div>
 
